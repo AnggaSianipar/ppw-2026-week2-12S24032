@@ -1,0 +1,329 @@
+/* 1. Universal Reset & Box Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc; /* 60% Warna Latar Utama */
+    color: #1e293b;            /* 30% Warna Teks Utama */
+    line-height: 1.6;
+}
+
+/* 2. Header & Navigasi */
+.main-header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.logo span {
+    color: #0284c7; /* 10% Aksen */
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}   
+
+.main-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #64748b;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: #0284c7;
+}
+
+/* 3. Layout Kontainer (Grid) */
+.layout-wrapper {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 28px;
+}
+
+/* 4. Section Card Blocks */
+.section-block {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 28px;
+    scroll-margin-top: 90px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.section-desc {
+    font-size: 13.5px;
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.sub-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334e68;
+    margin-bottom: 10px;
+}
+
+.custom-list {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.custom-list li {
+    margin-bottom: 6px;
+}
+
+/* 5. Tabel Semantik */
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.semantic-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    text-align: left;
+}
+
+.semantic-table caption {
+    font-size: 12px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.semantic-table th, .semantic-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.semantic-table thead th {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.semantic-table tfoot td {
+    background-color: #f8fafc;
+    font-weight: 700;
+    color: #0284c7;
+}
+
+/* 6. Formulir Interaktif & Accessible */
+.form-fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+}
+
+.form-legend {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0369a1;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.req {
+    color: #ef4444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 13.5px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3.5px rgba(2, 132, 199, 0.18);
+}
+
+.radio-group {
+    display: flex;
+    gap: 16px;
+    font-size: 13.5px;
+    margin-top: 6px;
+}
+
+.radio-group label, .checkbox-label {
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-size: 13px;
+    color: #475569;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: #0369a1;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+/* 7. Aside Sidebar Card */
+.aside-card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 90px;
+}
+
+.aside-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #e0f2fe;
+}
+
+.aside-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.aside-role {
+    font-size: 12.5px;
+    color: #0284c7;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.status-pill {
+    display: inline-block;
+    background-color: #d1fae5;
+    color: #065f46;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 12px 0;
+}
+
+.aside-bio {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* 8. Footer */
+.main-footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12.5px;
+    color: #94a3b8;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* 9. Media Queries (Responsif Mobile) */
+@media (max-width: 768px) {
+    .layout-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .main-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .main-nav {
+        position: static;
+        transform: none;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .aside-card {
+        position: static;
+    }
+}

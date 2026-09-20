@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & Layanan Interaktif - Angga B. P. Sianipar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header & Navigasi -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">ANGGA<span>Dev</span></a>
+        </div>
+        <nav class="main-nav" aria-label="Navigasi Utama">
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Kontainer Tata Letak Utama -->
+    <div class="layout-wrapper">
+        <main>
+            <!-- Bagian 1: Tentang Saya -->
+            <section id="tentang" class="section-block">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-desc">
+                    Mahasiswa Sarjana Sistem Informasi yang berfokus pada rekayasa web modern, standar aksesibilitas WCAG, dan performa antarmuka bersih.
+                </p>
+
+                <h3 class="sub-title">Fokus & Minat Utama</h3>
+                <ul class="custom-list">
+                    <li>Semantic HTML5 & Standard Accessibility</li>
+                    <li>Modern CSS (Flexbox, Grid, Responsive UI)</li>
+                    <li>UI/UX Design Architecture & User Centric Design</li>
+                </ul>
+            </section>
+
+            <!-- Bagian 2: Portofolio & Riwayat Proyek -->
+            <section id="portofolio" class="section-block">
+                <h2 class="section-title">Portofolio Karya & Akademik</h2>
+                <p class="section-desc">Daftar capaian matakuliah dan proyek perangkat lunak yang telah diselesaikan.</p>
+
+                <!-- Tabel Data Semantik Lengkap -->
+                <div class="table-responsive">
+                    <table class="semantic-table">
+                        <caption>Rekapitulasi Riwayat Proyek Perkuliahan</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama Proyek / Matakuliah</th>
+                                <th scope="col">Judul Proyek</th>
+                                <th scope="col">Teknologi</th>
+                                <th scope="col">Nilai / Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pemrograman Web Dasar</td>
+                                <td>Website Portofolio Pribadi</td>
+                                <td>HTML, CSS</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>UI/UX Design</td>
+                                <td>Perancangan Aplikasi Konsultasi Digital</td>
+                                <td>Figma</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Basis Data</td>
+                                <td>Sistem Informasi Perpustakaan</td>
+                                <td>PostgreSQL</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Analisis Perancangan Sistem</td>
+                                <td>Sistem Manajemen Layanan Akademik</td>
+                                <td>Bizagi</td>
+                                <td>A</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" scope="row">Total Proyek Selesai</td>
+                                <td>4    Proyek</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <h3 class="sub-title" style="margin-top: 24px;">Alur Penyelesaian Proyek</h3>
+                <ol class="custom-list">
+                    <li>Analisis kebutuhan dan riset ramah pengguna</li>
+                    <li>Perancangan sistem</li>
+                    <li>Implementasi kode</li>
+                </ol>
+            </section>
+
+            <!-- Bagian 3: Formulir Layanan & Kontak -->
+            <section id="layanan" class="section-block">
+                <h2 class="section-title">Pemesanan Layanan Konsultasi</h2>
+                <p class="section-desc">Isi formulir berikut untuk berdiskusi terkait kolaborasi proyek web.</p>
+
+                <form class="custom-form" action="#" method="POST">
+                    <!-- Fieldset 1: Data Pemesan -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Informasi Klien</legend>
+
+                        <div class="form-group">
+                            <label for="nama-klien" class="form-label">Nama Lengkap <span class="req">*</span></label>
+                            <input type="text" id="nama-klien" name="nama" class="form-control" placeholder="Contoh: Budi Santoso" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-klien" class="form-label">Email Aktif <span class="req">*</span></label>
+                            <input type="email" id="email-klien" name="email" class="form-control" placeholder="budi@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel-klien" class="form-label">Nomor Telepon/WhatsApp <span class="req">*</span></label>
+                            <input type="tel" id="tel-klien" name="telepon" class="form-control" placeholder="081234567890" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tanggal-mulai" class="form-label">Tanggal Mulai <span class="req">*</span></label>
+                            <input type="date" id="tanggal-mulai" name="tanggal_mulai" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tanggal-berakhir" class="form-label">Tanggal Berakhir <span class="req">*</span></label>
+                            <input type="date" id="tanggal-berakhir" name="tanggal_berakhir" class="form-control" required>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fieldset 2: Detail Layanan -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Detail Permintaan</legend>
+
+                        <div class="form-group">
+                            <label class="form-label">Kategori Layanan <span class="req">*</span></label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="kategori" value="uiux" required> UI/UX Design</label>
+                                <label><input type="radio" name="kategori" value="frontend"> Frontend Web</label>
+                                <label><input type="radio" name="kategori" value="audit"> Audit Aksesibilitas</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pilihan-paket" class="form-label">Pilihan Paket Konsultasi</label>
+                            <select id="pilihan-paket" name="paket" class="form-control">
+                                <option value="standar">Paket Standar (Review Desain)</option>
+                                <option value="premium">Paket Lengkap (Implementasi & Deployment)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deskripsi-pesan" class="form-label">Deskripsi Kebutuhan Proyek <span class="req">*</span></label>
+                            <textarea id="deskripsi-pesan" name="pesan" class="form-control" rows="4" placeholder="Jelaskan kebutuhan fungsional dan target Anda..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="persetujuan" required>
+                                Saya menyetujui bahwa data yang dikirimkan adalah benar. <span class="req">*</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn-submit">Kirim Permintaan Layanan</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Elemen Aside (Informasi Tambahan / Sidebar) -->
+        <aside class="profile-aside" aria-label="Profil Pengembang">
+            <div class="aside-card">
+                <img src="Foto_Profile.jpg" alt="Foto Profil Angga" class="aside-img">
+                <h3 class="aside-name">Angga B. P. Sianipar</h3>
+                <p class="aside-role">FullStack Developer</p>
+                <div class="status-pill">Siap Bekerjasama</div>
+                <hr class="divider">
+                <p class="aside-bio">Institut Teknologi Del, Sitoluama, Laguboti, Toba.</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Angga B. P. Sianipar. Dilindungi Hak Cipta. Modul Praktikum Pemrograman Web Institut Teknologi Del.</p>
+    </footer>
+
+</body>
+</html>
