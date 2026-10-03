@@ -6,6 +6,7 @@ Proyek ini merupakan pemenuhan Tugas Mandiri Minggu ke-2 untuk mata kuliah **Pem
 
 ## Identitas Pengembang
 * **Nama:** Angga B. P. Sianipar
+* **NIM:** 12S24032
 * **Program Studi:** S1 Sistem Informasi
 * **Institusi:** Institut Teknologi Del
 * **Tahun Akademik:** Semester Genap 2025/2026
@@ -13,7 +14,42 @@ Proyek ini merupakan pemenuhan Tugas Mandiri Minggu ke-2 untuk mata kuliah **Pem
 ---
 
 ## Live Demo & Tautan Penting
-* **Repositori GitHub:** `https://github.com/AnggaSianipar/ppw-2026-week2-12S24032`
+* **Live Demo GitHub Pages:** https://AnggaSianipar.github.io/ppw-2026-week2-12S24032/
+* **Repositori GitHub:** https://github.com/AnggaSianipar/ppw-2026-week2-12S24032
+
+---
+
+## Komparasi: Sebelum vs Sesudah Integrasi Framework
+
+Tabel berikut menyajikan analisis perbandingan antara implementasi Vanilla HTML/CSS dengan setelah integrasi framework CSS:
+
+| Indikator / Fitur | Sebelum Integrasi (Vanilla HTML/CSS) | Sesudah Integrasi Framework |
+| :--- | :--- | :--- |
+| **Arsitektur Kode & CSS** | Menulis stylesheet kustom manual dari nol di `style.css`. | Memanfaatkan utility classes / komponen pra-bina dari framework. |
+| **Penyusunan Layout & Grid** | Menggunakan CSS Grid & Flexbox kustom via Media Queries `@media`. | Menggunakan sistem Grid/Flexbox bawaan framework yang dinamis. |
+| **Formulir Interaktif** | Styling manual untuk `<fieldset>`, `<legend>`, dan kontrol input. | Menggunakan komponen form tersandar yang konsisten di semua browser. |
+| **Efisiensi Waktu Muka** | Membutuhkan pengaturan detail margin, padding, dan transisi manual. | Waktu pengembangan visual layout lebih cepat dengan kelas bawaan. |
+| **Aksesibilitas (a11y)** | Pengaturan atribut ARIA dan kontras warna dikelola penuh secara manual. | Beberapa komponen framework sudah membawa standar ARIA bawaan. |
+
+---
+
+## Bukti Visual Komparasi Tampilan (Screenshot)
+
+### 1. Halaman Beranda (Home)
+| Sebelum Integrasi Framework | Sesudah Integrasi Framework |
+| :---: | :---: |
+| ![Beranda Sebelum](assets/Sebelum%20\(Beranda\).png) | ![Beranda Sesudah](assets/Sesudah%20\(Beranda\).png) |
+
+### 2. Seksi Portofolio & Detail
+| Sebelum Integrasi Framework | Sesudah Integrasi Framework |
+| :---: | :---: |
+| ![Portofolio Sebelum](assets/Sebelum%20\(Portofolio\).png) | ![Portofolio Sesudah](assets/Sesudah%20\(Portofolio\).png) |
+| — | ![Detail Portofolio Sesudah](assets/Sesudah%20\(DetailPortofolio\).png) |
+
+### 3. Formulir Layanan Interaktif
+| Sebelum Integrasi Framework | Sesudah Integrasi Framework |
+| :---: | :---: |
+| ![Formulir Sebelum](assets/Sebelum%20\(Formulir\).png) | ![Formulir Sesudah](assets/Sesudah%20\(Formulir\).png) |
 
 ---
 
@@ -48,7 +84,16 @@ Proyek ini merupakan pemenuhan Tugas Mandiri Minggu ke-2 untuk mata kuliah **Pem
 ## Struktur Berkas Proyek
 
 ```text
-├── index.html    
+.
+├── assets/
+│   ├── Foto_Profile.jpg
+│   ├── Sebelum (Beranda).png
+│   ├── Sebelum (Formulir).png
+│   ├── Sebelum (Portofolio).png
+│   ├── Sesudah (Beranda).png
+│   ├── Sesudah (DetailPortofolio).png
+│   ├── Sesudah (Formulir).png
+│   └── Sesudah (Portofolio).png
+├── index.html     
 ├── style.css         
-├── Foto_Profile.jpg     
-└── README.md         
+└── README.md
