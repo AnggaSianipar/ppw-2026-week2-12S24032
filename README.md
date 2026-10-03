@@ -38,18 +38,18 @@ Tabel berikut menyajikan analisis perbandingan antara implementasi Vanilla HTML/
 ### 1. Halaman Beranda (Home)
 | Sebelum Integrasi Framework | Sesudah Integrasi Framework |
 | :---: | :---: |
-| ![Beranda Sebelum](assets/Sebelum%20\(Beranda\).png) | ![Beranda Sesudah](assets/Sesudah%20\(Beranda\).png) |
+| ![Beranda Sebelum](assets/Sebelum%20(Beranda).png) | ![Beranda Sesudah](assets/Sesudah(Beranda).png) |
 
 ### 2. Seksi Portofolio & Detail
 | Sebelum Integrasi Framework | Sesudah Integrasi Framework |
 | :---: | :---: |
-| ![Portofolio Sebelum](assets/Sebelum%20\(Portofolio\).png) | ![Portofolio Sesudah](assets/Sesudah%20\(Portofolio\).png) |
-| — | ![Detail Portofolio Sesudah](assets/Sesudah%20\(DetailPortofolio\).png) |
+| ![Portofolio Sebelum](assets/Sebelum%20(Portofolio).png) | ![Portofolio Sesudah](assets/Sesudah%20(Portofolio).png) |
+| — | ![Detail Portofolio Sesudah](assets/Sesudah(DetailPortofolio).png) |
 
 ### 3. Formulir Layanan Interaktif
 | Sebelum Integrasi Framework | Sesudah Integrasi Framework |
 | :---: | :---: |
-| ![Formulir Sebelum](assets/Sebelum%20\(Formulir\).png) | ![Formulir Sesudah](assets/Sesudah%20\(Formulir\).png) |
+| ![Formulir Sebelum](assets/Sebelum%20(Formulir).png) | ![Formulir Sesudah](assets/Sesudah(Formulir).png) |
 
 ---
 
