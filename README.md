@@ -43,7 +43,7 @@ Tabel berikut menyajikan analisis perbandingan antara implementasi Vanilla HTML/
 ### 2. Seksi Portofolio & Detail
 | Sebelum Integrasi Framework | Sesudah Integrasi Framework |
 | :---: | :---: |
-| ![Portofolio Sebelum](/assets/Sebelum%20(Portofolio).png) | ![Portofolio Sesudah](assets/Sesudah%20(Portofolio).png) |
+| ![Portofolio Sebelum](assets/Sebelum(Portofolio).png) | ![Portofolio Sesudah](assets/Sesudah%20(Portofolio).png) |
 | — | ![Detail Portofolio Sesudah](assets/Sesudah(DetailPortofolio).png) |
 
 ### 3. Formulir Layanan Interaktif
