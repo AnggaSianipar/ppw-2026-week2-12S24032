@@ -1,0 +1,11 @@
+{
+  "name": "Angga Sianipar",
+  "nim": "12S24032",
+  "role": "FullStack Developer",
+  "institution": "Mahasiswa Sistem Informasi IT Del",
+  "bio": "Mahasiswa Sistem Informasi IT Del yang berfokus pada rekayasa web modern, aksesibilitas WCAG, dan performa antarmuka terstruktur.",
+  "about": "Mahasiswa Sarjana Sistem Informasi yang membangun pengalaman digital bersih, terukur, dan berpusat pada pengguna.",
+  "image": "assets/Foto_Profile.jpg",
+  "github": "https://github.com/AnggaSianipar?tab=repositories",
+  "skills": ["Semantic HTML5 & Accessibility", "Modern CSS (Flexbox, Grid, Responsive UI)", "UI/UX Design Architecture & User Centric Design"]
+}

@@ -1,0 +1,5 @@
+[
+  {"id": "review", "name": "Paket Review UI/UX", "description": "Audit desain dan rekomendasi perbaikan antarmuka.", "price": "Rp500.000"},
+  {"id": "development", "name": "Paket Implementasi Web", "description": "Implementasi halaman web responsif dan aksesibel.", "price": "Rp1.500.000"},
+  {"id": "complete", "name": "Paket Lengkap", "description": "Perancangan, implementasi, integrasi API, dan deployment.", "price": "Rp2.500.000"}
+]

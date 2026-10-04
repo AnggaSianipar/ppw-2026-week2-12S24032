@@ -3,20 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio dan layanan digital Angga B. P. Sianipar">
     <title>Portofolio & Layanan - Angga B. P. Sianipar</title>
-
-    <!-- 1. Bootstrap 5.3 CDN CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- 2. Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- 3. Custom CSS Eksternal (Wajib setelah Bootstrap) -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- 1. Responsive Navbar dengan Hamburger Collapse -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm py-3">
             <div class="container">
@@ -31,6 +24,7 @@
                         <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
                     </ul>
                 </div>
+                <span class="order-badge" title="Jumlah pesanan tersimpan"><i class="bi bi-bag-check" aria-hidden="true"></i> <span id="orderCount">0</span></span>
                 <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false" title="Ganti tema">
                     <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
                 </button>
@@ -38,23 +32,29 @@
         </nav>
     </header>
 
-    <!-- 2. Hero Section Proporsional dengan CTA -->
     <section id="hero" class="hero-section py-5 mb-4 text-center text-lg-start">
         <div class="container py-4">
             <div class="row align-items-center hero-row">
                 <div class="col-lg-8 hero-copy">
-                    <h1 class="display-5 fw-bold text-dark mb-3">Solusi Rekayasa Antarmuka & Sistem Digital Bersih</h1>
-                    <p class="lead text-secondary mb-4">Mahasiswa Sistem Informasi IT Del yang berfokus pada rekayasa web modern, standar aksesibilitas WCAG, dan performa antarmuka terstruktur.</p>
+                    <h1 class="display-5 fw-bold text-dark mb-3 animated-profile-name"><span id="profileName">Memuat profil...</span></h1>
+                    <p id="profileBio" class="lead text-secondary mb-4">Menyiapkan informasi profil.</p>
                     <div class="d-flex flex-wrap gap-2 justify-content-center hero-actions">
                         <a href="#layanan" class="btn btn-brand px-4 py-2"><i class="bi bi-briefcase me-1"></i> Pesan Konsultasi</a>
                         <a href="#portofolio" class="btn btn-outline-brand px-4 py-2"><i class="bi bi-code-slash me-1"></i> Lihat Portofolio</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center mt-4 mt-lg-0 hero-profile">
+<<<<<<< Updated upstream
                     <img src="Foto_Profile.jpg" alt="Foto Profil Angga" class="rounded-circle profile-hero-img shadow">
                     <h5 class="fw-bold mt-3 mb-0">Hi, I'm Angga</h5>
                     <small class="text-accent fw-semibold">FullStack Developer</small>
                     <a class="github-link mt-3" href="https://github.com/AnggaSianipar?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="Buka repository GitHub Angga">
+=======
+                    <img id="profileImage" src="assets/Foto_Profile.jpg" alt="Foto profil" class="rounded-circle profile-hero-img shadow">
+                    <h5 id="profileRole" class="fw-bold mt-3 mb-0">FullStack Developer</h5>
+                    <small id="profileInstitution" class="text-accent fw-semibold">Institut Teknologi Del</small>
+                    <a id="profileGithub" class="github-link mt-3" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Buka GitHub">
+>>>>>>> Stashed changes
                         <i class="bi bi-github" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -62,279 +62,57 @@
         </div>
     </section>
 
-    <!-- Kontainer Konten Utama -->
     <div class="container mb-5">
         <main class="main-content">
-                <!-- Bagian Tentang Saya -->
-                <section id="tentang" class="section-block p-4 mb-4">
-                    <h2 class="section-title"><i class="bi bi-person-lines-fill text-accent me-2"></i>Tentang Saya</h2>
-                    <p class="section-desc">Mahasiswa Sarjana Sistem Informasi yang berfokus pada rekayasa web modern, standar aksesibilitas WCAG, dan performa antarmuka bersih.</p>
-                    <h3 class="sub-title">Fokus & Minat Utama</h3>
-                    <ul class="custom-list mb-0">
-                        <li>Semantic HTML5 & Standard Accessibility</li>
-                        <li>Modern CSS (Flexbox, Grid, Responsive UI)</li>
-                        <li>UI/UX Design Architecture & User Centric Design</li>
-                    </ul>
-                </section>
+            <section id="tentang" class="section-block p-4 mb-4">
+                <h2 class="section-title"><i class="bi bi-person-lines-fill text-accent me-2"></i>Tentang Saya</h2>
+                <p id="profileAbout" class="section-desc">Memuat deskripsi...</p>
+                <h3 class="sub-title">Fokus & Minat Utama</h3>
+                <ul id="profileSkills" class="custom-list mb-0"></ul>
+            </section>
 
-                <!-- Bagian Portofolio: 4 Kartu Responsif -->
-                <section id="portofolio" class="section-block p-4 mb-4">
-                    <h2 class="section-title"><i class="bi bi-grid-fill text-accent me-2"></i>Portofolio Karya & Akademik</h2>
-                    <p class="section-desc">Daftar capaian matakuliah dan proyek dalam bentuk kartu interaktif modern.</p>
-
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <!-- Kartu 1 -->
-                        <div class="col">
-                            <div class="card h-100 project-card border">
-                                <div class="card-body d-flex flex-column">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="badge bg-primary">HTML & CSS</span>
-                                        <small class="text-success fw-bold">Nilai: A</small>
-                                    </div>
-                                    <h5 class="card-title fw-bold">Website Portofolio</h5>
-                                    <p class="card-text text-secondary small flex-grow-1">Perancangan website profil pribadi menggunakan struktur semantik terstandarisasi dan CSS modern.</p>
-                                    <button class="btn btn-outline-brand btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalProyek1">
-                                        <i class="bi bi-eye me-1"></i> Detail Proyek
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kartu 2 -->
-                        <div class="col">
-                            <div class="card h-100 project-card border">
-                                <div class="card-body d-flex flex-column">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="badge bg-warning text-dark">Figma</span>
-                                        <small class="text-success fw-bold">Nilai: A</small>
-                                    </div>
-                                    <h5 class="card-title fw-bold">Konsultasi Digital</h5>
-                                    <p class="card-text text-secondary small flex-grow-1">Perancangan UI/UX aplikasi konsultasi menggunakan alur pengguna yang teruji dan prototipe interaktif.</p>
-                                    <button class="btn btn-outline-brand btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalProyek2">
-                                        <i class="bi bi-eye me-1"></i> Detail Proyek
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kartu 3 -->
-                        <div class="col">
-                            <div class="card h-100 project-card border">
-                                <div class="card-body d-flex flex-column">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="badge bg-info text-dark">PostgreSQL</span>
-                                        <small class="text-success fw-bold">Nilai: A</small>
-                                    </div>
-                                    <h5 class="card-title fw-bold">Sistem Perpustakaan</h5>
-                                    <p class="card-text text-secondary small flex-grow-1">Arsitektur basis data relasional untuk mengelola sirkulasi dan katalog perpustakaan skala kampus.</p>
-                                    <button class="btn btn-outline-brand btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalProyek1">
-                                        <i class="bi bi-eye me-1"></i> Detail Proyek
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kartu 4 -->
-                        <div class="col">
-                            <div class="card h-100 project-card border">
-                                <div class="card-body d-flex flex-column">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span class="badge bg-secondary">Bizagi</span>
-                                        <small class="text-success fw-bold">Nilai: A</small>
-                                    </div>
-                                    <h5 class="card-title fw-bold">Manajemen Akademik</h5>
-                                    <p class="card-text text-secondary small flex-grow-1">Analisis dan pemodelan proses bisnis layanan akademik berbasis standar notasi BPMN 2.0.</p>
-                                    <button class="btn btn-outline-brand btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalProyek2">
-                                        <i class="bi bi-eye me-1"></i> Detail Proyek
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+            <section id="portofolio" class="section-block p-4 mb-4">
+                <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+                    <div>
+                        <h2 class="section-title"><i class="bi bi-grid-fill text-accent me-2"></i>Portofolio Karya & Akademik</h2>
+                        <p class="section-desc">Proyek dimuat asinkron dari provider JSON modular.</p>
                     </div>
-                </section>
+                    <label class="visually-hidden" for="categoryFilter">Filter kategori proyek</label>
+                    <select id="categoryFilter" class="form-select filter-select" aria-label="Filter kategori proyek">
+                        <option value="all">Semua kategori</option>
+                    </select>
+                </div>
+                <div id="projectsState" class="ui-state" role="status" aria-live="polite">
+                    <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Memuat...</span></div>
+                    <span>Memuat proyek...</span>
+                </div>
+                <div id="projectsGrid" class="row row-cols-1 row-cols-md-2 g-4"></div>
+            </section>
 
-                <!-- Bagian Formulir: Floating Labels & Validasi Visual -->
-                <section id="layanan" class="section-block p-4 mb-4">
-                    <h2 class="section-title"><i class="bi bi-chat-square-dots-fill text-accent me-2"></i>Pemesanan Layanan Konsultasi</h2>
-                    <p class="section-desc">Isi formulir berikut untuk berdiskusi terkait kolaborasi proyek web.</p>
-
-                    <form class="needs-validation" novalidate>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="namaKlien" placeholder="Nama" required>
-                            <label for="namaKlien"><i class="bi bi-person me-1"></i> Nama Lengkap *</label>
-                            <div class="invalid-feedback">Nama lengkap wajib diisi.</div>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="emailKlien" placeholder="Email" required>
-                            <label for="emailKlien"><i class="bi bi-envelope me-1"></i> Alamat Email Resmi *</label>
-                            <div class="invalid-feedback">Masukkan format email yang valid.</div>
-                        </div>
-
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-whatsapp"></i></span>
-                            <div class="form-floating flex-grow-1">
-                                <input type="tel" class="form-control" id="telpKlien" placeholder="WhatsApp" required>
-                                <label for="telpKlien">Nomor WhatsApp *</label>
-                            </div>
-                            <div class="invalid-feedback">Nomor kontak wajib diisi.</div>
-                        </div>
-
-                        <div class="row g-2 mb-3">
-                            <div class="col-md-6 form-floating">
-                                <input type="date" class="form-control" id="tglMulai" required>
-                                <label for="tglMulai">Tanggal Mulai *</label>
-                                <div class="invalid-feedback">Pilih tanggal mulai.</div>
-                            </div>
-                            <div class="col-md-6 form-floating">
-                                <input type="date" class="form-control" id="tglSelesai" required>
-                                <label for="tglSelesai">Tanggal Berakhir *</label>
-                                <div class="invalid-feedback">Pilih tanggal selesai.</div>
-                            </div>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="paketSelect" required>
-                                <option value="" selected disabled>Pilih opsi paket...</option>
-                                <option value="standar">Paket Standar (Review Desain UI/UX)</option>
-                                <option value="premium">Paket Lengkap (Implementasi & Deployment)</option>
-                            </select>
-                            <label for="paketSelect"><i class="bi bi-box-seam me-1"></i> Paket Konsultasi *</label>
-                            <div class="invalid-feedback">Silakan pilih salah satu paket layanan.</div>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Pesan" id="pesanKlien" style="height: 110px" required></textarea>
-                            <label for="pesanKlien"><i class="bi bi-pencil-square me-1"></i> Deskripsi Kebutuhan Proyek *</label>
-                            <div class="invalid-feedback">Deskripsi proyek tidak boleh kosong.</div>
-                        </div>
-
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" id="persetujuanCheck" required>
-                            <label class="form-check-label small" for="persetujuanCheck">
-                                Saya menyetujui bahwa data yang dikirimkan adalah benar. *
-                            </label>
-                            <div class="invalid-feedback">Persetujuan wajib dicentang.</div>
-                        </div>
-
-                        <button type="submit" class="btn btn-brand w-100 py-2 fw-semibold">
-                            <i class="bi bi-send-fill me-1"></i> Kirim Permintaan Layanan
-                        </button>
-                    </form>
-                </section>
+            <section id="layanan" class="section-block p-4 mb-4">
+                <h2 class="section-title"><i class="bi bi-chat-square-dots-fill text-accent me-2"></i>Pemesanan Layanan Konsultasi</h2>
+                <p class="section-desc">Form dikirim asinkron melalui HTTP POST tanpa reload halaman.</p>
+                <form id="serviceForm" class="needs-validation" novalidate>
+                    <div class="form-floating mb-3"><input type="text" class="form-control" id="namaKlien" placeholder="Nama" required><label for="namaKlien"><i class="bi bi-person me-1"></i> Nama Lengkap *</label><div class="invalid-feedback">Nama lengkap wajib diisi.</div></div>
+                    <div class="form-floating mb-3"><input type="email" class="form-control" id="emailKlien" placeholder="Email" required><label for="emailKlien"><i class="bi bi-envelope me-1"></i> Alamat Email Resmi *</label><div class="invalid-feedback">Masukkan format email yang valid.</div></div>
+                    <div class="input-group mb-3"><span class="input-group-text"><i class="bi bi-whatsapp"></i></span><div class="form-floating flex-grow-1"><input type="tel" class="form-control" id="telpKlien" placeholder="WhatsApp" required><label for="telpKlien">Nomor WhatsApp *</label></div><div class="invalid-feedback">Nomor kontak wajib diisi.</div></div>
+                    <div class="row g-2 mb-3"><div class="col-md-6 form-floating"><input type="date" class="form-control" id="tglMulai" required><label for="tglMulai">Tanggal Mulai *</label><div class="invalid-feedback">Pilih tanggal mulai.</div></div><div class="col-md-6 form-floating"><input type="date" class="form-control" id="tglSelesai" required><label for="tglSelesai">Tanggal Berakhir *</label><div class="invalid-feedback">Pilih tanggal selesai.</div></div></div>
+                    <div class="form-floating mb-3"><select class="form-select" id="paketSelect" required><option value="" selected disabled>Memuat paket...</option></select><label for="paketSelect"><i class="bi bi-box-seam me-1"></i> Paket Konsultasi *</label><div class="invalid-feedback">Silakan pilih paket layanan.</div></div>
+                    <div class="form-floating mb-3"><textarea class="form-control" placeholder="Pesan" id="pesanKlien" style="height: 110px" required></textarea><label for="pesanKlien"><i class="bi bi-pencil-square me-1"></i> Deskripsi Kebutuhan Proyek *</label><div class="invalid-feedback">Deskripsi proyek tidak boleh kosong.</div></div>
+                    <div class="form-check mb-4"><input class="form-check-input" type="checkbox" id="persetujuanCheck" required><label class="form-check-label small" for="persetujuanCheck">Saya menyetujui bahwa data yang dikirimkan adalah benar. *</label><div class="invalid-feedback">Persetujuan wajib dicentang.</div></div>
+                    <button id="submitButton" type="submit" class="btn btn-brand w-100 py-2 fw-semibold"><i class="bi bi-send-fill me-1"></i> Kirim Permintaan Layanan</button>
+                </form>
+            </section>
         </main>
     </div>
 
-
-    <!-- Modal Dialog 1 -->
-    <div class="modal fade" id="modalProyek1" tabindex="-1" aria-labelledby="modalProyek1Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="modalProyek1Label">Website Portofolio Pribadi</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-secondary small">Proyek perancangan halaman portofolio menggunakan standar semantik HTML5, pemetaan Flexbox murni, dan integrasi Bootstrap 5.3.</p>
-                    <ul class="small mb-0">
-                        <li><strong>Teknologi:</strong> HTML5 Semantik, Bootstrap 5.3</li>
-                        <li><strong>Aksesibilitas:</strong> Standar WCAG 2.1 AA</li>
-                        <li><strong>Hasil Nilai:</strong> A</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
-                </div>
-            </div>
-        </div>
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title fw-bold" id="projectModalLabel"></h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button></div><div class="modal-body" id="projectModalBody"></div><div class="modal-footer"><a id="projectModalLink" class="btn btn-brand btn-sm" target="_blank" rel="noopener noreferrer">Buka proyek</a><button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button></div></div></div>
     </div>
 
-    <!-- Modal Dialog 2 -->
-    <div class="modal fade" id="modalProyek2" tabindex="-1" aria-labelledby="modalProyek2Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="modalProyek2Label">Perancangan UI/UX Konsultasi Digital</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-secondary small">Perancangan aplikasi digital mulai dari tahapan analisis personas, perancangan wireframe, hingga pembuatan prototipe interaktif.</p>
-                    <ul class="small mb-0">
-                        <li><strong>Peralatan:</strong> Figma, FigJam</li>
-                        <li><strong>Metodologi:</strong> Design Thinking & Usability Testing</li>
-                        <li><strong>Hasil Nilai:</strong> A</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="main-footer py-4 text-center bg-white border-top">
-        <div class="container">
-            <p class="text-secondary small mb-0">&copy; 2026 <a href="https://github.com/AnggaSianipar" target="_blank" rel="noopener noreferrer">Angga B. P. Sianipar</a>. Dilindungi Hak Cipta. Praktikum Pemrograman Web Institut Teknologi Del.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap 5.3 CDN JS Bundle -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="feedbackToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"><div class="toast-header"><i class="bi bi-info-circle-fill text-primary me-2"></i><strong class="me-auto" id="toastTitle">Informasi</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Tutup"></button></div><div class="toast-body" id="toastMessage"></div></div></div>
+    <footer class="main-footer py-4 text-center bg-white border-top"><div class="container"><p class="text-secondary small mb-0">&copy; 2026 <a href="https://github.com/AnggaSianipar" target="_blank" rel="noopener noreferrer">Angga B. P. Sianipar</a>. Praktikum Pemrograman Web Institut Teknologi Del.</p></div></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Script Native Validasi Form Bootstrap -->
-    <script>
-        (() => {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                    form.classList.add('was-validated')
-                }, false)
-            })
-
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link')
-            navLinks.forEach((link) => {
-                link.addEventListener('click', () => {
-                    navLinks.forEach((navLink) => navLink.classList.remove('active'))
-                    link.classList.add('active')
-
-                    if (link.getAttribute('href') === '#hero') {
-                        window.scrollTo({ top: 0, behavior: 'smooth' })
-                    }
-                })
-            })
-
-            const heroSection = document.querySelector('.hero-section')
-            const heroObserver = new IntersectionObserver(([entry]) => {
-                heroSection.classList.toggle('is-visible', entry.isIntersecting)
-            }, {
-                threshold: 0.15
-            })
-
-            heroObserver.observe(heroSection)
-
-            const themeToggle = document.querySelector('#themeToggle')
-            const savedTheme = localStorage.getItem('theme')
-
-            const setTheme = (isDark) => {
-                document.body.classList.toggle('dark-theme', isDark)
-                themeToggle.setAttribute('aria-pressed', String(isDark))
-                themeToggle.setAttribute('aria-label', isDark ? 'Aktifkan mode terang' : 'Aktifkan mode gelap')
-                themeToggle.innerHTML = `<i class="bi ${isDark ? 'bi-sun-fill' : 'bi-moon-stars-fill'}" aria-hidden="true"></i>`
-            }
-
-            setTheme(savedTheme === 'dark')
-            themeToggle.addEventListener('click', () => {
-                const isDark = !document.body.classList.contains('dark-theme')
-                localStorage.setItem('theme', isDark ? 'dark' : 'light')
-                setTheme(isDark)
-            })
-        })()
-    </script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

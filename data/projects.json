@@ -1,0 +1,46 @@
+[
+  {
+    "id": "portfolio-web",
+    "title": "Website Portofolio",
+    "category": "Frontend",
+    "summary": "Website profil pribadi dengan struktur semantik dan desain responsif.",
+    "description": "Perancangan website profil pribadi menggunakan HTML5 semantik, Bootstrap 5.3, dan CSS modern yang berorientasi aksesibilitas.",
+    "tags": ["HTML5", "Bootstrap", "CSS"],
+    "metrics": ["4 halaman seksi utama", "WCAG AA", "Mobile-first"],
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    "link": "https://github.com/AnggaSianipar/ppw-2026-week2-12S24032"
+  },
+  {
+    "id": "digital-consulting",
+    "title": "Konsultasi Digital",
+    "category": "UI/UX",
+    "summary": "Prototipe aplikasi konsultasi dengan alur pengguna yang teruji.",
+    "description": "Perancangan aplikasi mulai dari analisis persona, wireframe, hingga prototipe interaktif yang divalidasi melalui usability testing.",
+    "tags": ["Figma", "FigJam", "Design Thinking"],
+    "metrics": ["3 persona", "12 layar prototipe", "Usability tested"],
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+    "link": "https://github.com/AnggaSianipar"
+  },
+  {
+    "id": "library-system",
+    "title": "Sistem Perpustakaan",
+    "category": "Backend",
+    "summary": "Arsitektur basis data relasional untuk sirkulasi perpustakaan kampus.",
+    "description": "Model data dan rancangan query untuk mengelola katalog, anggota, peminjaman, dan pengembalian buku secara konsisten.",
+    "tags": ["PostgreSQL", "Database", "ERD"],
+    "metrics": ["8 entitas", "12 relasi", "Transaksi konsisten"],
+    "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80",
+    "link": "https://github.com/AnggaSianipar"
+  },
+  {
+    "id": "academic-process",
+    "title": "Manajemen Akademik",
+    "category": "Business Process",
+    "summary": "Pemodelan proses bisnis layanan akademik berbasis BPMN 2.0.",
+    "description": "Analisis proses akademik untuk menemukan bottleneck dan menghasilkan alur layanan yang lebih terukur.",
+    "tags": ["Bizagi", "BPMN 2.0", "Process Analysis"],
+    "metrics": ["5 aktor", "2 proses utama", "BPMN tervalidasi"],
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    "link": "https://github.com/AnggaSianipar"
+  }
+]

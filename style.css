@@ -107,6 +107,24 @@ body.dark-theme {
 .hero-copy {
     position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+
+.animated-profile-name {
+    width: max-content;
+    max-width: 100%;
+}
+
+#profileName {
+    border-right: 3px solid var(--brand-primary);
+    padding-right: 0.15rem;
+    animation: typingCursor 0.75s step-end infinite;
+}
+
+@keyframes typingCursor {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .hero-actions {
@@ -233,6 +251,59 @@ body.dark-theme .github-link:focus-visible {
     border-color: var(--brand-primary);
 }
 
+.project-image {
+    height: 160px;
+    object-fit: cover;
+    background-color: var(--brand-light);
+}
+
+.filter-select {
+    width: auto;
+    min-width: 170px;
+}
+
+.ui-state {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.ui-state.success {
+    display: none;
+}
+
+.ui-state.empty {
+    min-height: 8rem;
+    border: 1px dashed var(--border-subtle);
+    border-radius: var(--card-radius);
+}
+
+.ui-state.error {
+    min-height: 5rem;
+    color: #b91c1c;
+    background-color: #fef2f2;
+    border-radius: 0.5rem;
+}
+
+.order-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 1rem;
+    color: #f8fafc;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+body.dark-theme .ui-state.error {
+    background-color: #450a0a;
+    color: #fecaca;
+}
+
 /*5. Tombol Personal & Theming*/
 .btn-brand {
     background-color: var(--brand-primary);
@@ -296,6 +367,12 @@ body.dark-theme .text-secondary,
 body.dark-theme .section-desc,
 body.dark-theme .custom-list {
     color: #cbd5e1 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #profileName {
+        animation: none;
+    }
 }
 
 body.dark-theme .project-card {
